@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div id="nav" class="flex justify-between max-w-xl mx-auto text-2xl">
+    <div id="nav" class="flex justify-between max-w-xl mx-auto text-xl">
       <router-link to="/">Home</router-link>
       <router-link to="/jokes">All Jokes</router-link>
     </div>
@@ -9,15 +9,15 @@
 </template>
 
 <script>
-import { mapActions } from "vuex";
+import { mapActions } from "vuex"
 export default {
   methods: {
-    ...mapActions(["setCurrentJoke"])
+    ...mapActions(["setCurrentJoke"]),
   },
   mounted() {
-    this.setCurrentJoke();
-  }
-};
+    this.setCurrentJoke()
+  },
+}
 </script>
 
 <style>
@@ -26,20 +26,21 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #707374;
 }
 
 #nav {
-  padding: 60px;
+  padding: 1.2rem 4.2rem;
 }
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #707374;
   text-decoration: none;
+  letter-spacing: 0.1rem;
 }
 
 #nav a.router-link-exact-active {
-  color: blue;
+  color: #2196F3;
 }
 </style>
