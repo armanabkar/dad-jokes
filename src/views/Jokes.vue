@@ -16,9 +16,6 @@ export default {
     ...mapGetters({
       jokes: "getAllJokes",
     }),
-    // jokes() {
-    // return this.$store.getters.getAllJokes;
-    // }
   },
 }
 </script>

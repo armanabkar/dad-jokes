@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="home shadow max-w-2xl mx-auto p-8 rounded"
-  >
+  <div class="home shadow max-w-2xl mx-auto p-8 rounded">
     <h2 class="text-3xl text-blue-500 font-extrabold mb-2">
       Can I Haz Dad Jokes
     </h2>
@@ -16,27 +14,15 @@
 </template>
 
 <script>
-// @ is an alias to /src
-
 import { mapActions, mapGetters } from "vuex"
 export default {
   name: "Home",
   methods: {
     ...mapActions({ addJoke: "setCurrentJoke" }),
-    // addJoke() {
-    // this.$store.dispatch("setCurrentJoke");
-    // this.setCurrentJoke();
-    // }
   },
   computed: {
     ...mapGetters({ joke: "getCurrentJoke" }),
-    // joke() {
-    // return this.getCurrentJoke;
-    // }
   },
-  // mounted() {
-  // this.joke = this.$store.getters.getCurrentJoke;
-  // }
 }
 </script>
 
